@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "name": "checking project",
+    "name": "admission-portal",
     "builds": [
         {
             "src": "./index.js",
@@ -8,13 +8,9 @@
         }
     ],
     "routes": [
-        {
-            "src": "/order",
-            "dest": "/index.js"
-        },
-        {
-            "src": "/contact",
-            "dest": "/index.js"
-        }
+       {
+        "src":"/(.*)",
+        "dest":"/"
+       }
     ]
 }
